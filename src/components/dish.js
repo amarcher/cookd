@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
-import Ingredient from './Ingredient';
+import Ingredient from './ingredient';
 
 const GET_DISH = gql`
   query GetDish($dishId: bigint!) {
