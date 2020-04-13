@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "cookd",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Cooking Adventures with Friends",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Andrew Archer <andrew.m.archer@gmail.com>",
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",
     "@hot-loader/react-dom": "^16.11.0",
@@ -25,9 +25,9 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "engines": {
+    "node": "12.16.1"
+  },
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
