@@ -1,0 +1,1 @@
+web: gatsby start
