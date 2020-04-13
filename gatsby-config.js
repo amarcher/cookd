@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Cookd`,
+    description: `Track your adventures in cooking with friends.`,
+    author: `The Archers`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,8 +27,17 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "HASURA",
+        fieldName: "hasura",
+        url: process.env.GATSBY_HASURA_GRAPHQL_URL,
+        refetchInterval: 0
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
