@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Cookd`,
@@ -28,13 +32,17 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: 'gatsby-source-graphql',
       options: {
-        typeName: "HASURA",
-        fieldName: "hasura",
+        typeName: 'HASURA',
+        fieldName: 'hasura',
         url: process.env.GATSBY_HASURA_GRAPHQL_URL,
-        refetchInterval: 0
-      }
+        refetchInterval: 0,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/dish/*`] },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

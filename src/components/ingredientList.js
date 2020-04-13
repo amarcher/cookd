@@ -1,12 +1,14 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
+import Ingredient from "./ingredient";
 
 const GET_INGREDIENTS = gql`
   query {
     ingredient {
       id
       name
+      icon_url
     }
   }
 `;
@@ -20,9 +22,7 @@ const AuthorList = () => {
   return (
     <div>
       {data.ingredient.map((ingredient, index) => (
-        <div key={index}>
-          <h2>{ingredient.name}</h2>
-        </div>
+        <Ingredient {...ingredient} />
       ))}
     </div>
   );

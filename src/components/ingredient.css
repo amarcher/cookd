@@ -1,0 +1,29 @@
+.ingredient__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 0px rgba(234, 234, 234, 0.42);
+  padding: 8px;
+  margin: 8px 16px 8px 0;
+}
+
+.ingredient__icon_container {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+}
+
+.ingredient__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.ingredient__name {
+  flex: 1 1 auto;
+  line-height: 30px;
+  font-size: 24px;
+  padding: 16px;
+}
