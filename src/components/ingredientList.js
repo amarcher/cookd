@@ -13,20 +13,20 @@ const GET_INGREDIENTS = gql`
   }
 `;
 
-const AuthorList = () => {
+const IngredientList = () => {
   const { loading, error, data } = useQuery(GET_INGREDIENTS);
 
-  if (loading) return "loading...";
+  if (loading) return null;
   if (error) return `error: ${error.message}`;
 
   return (
     <div>
-      {data.ingredient.map((ingredient, index) => (
-        <Ingredient {...ingredient} />
+      {data.ingredient.map((ingredient) => (
+        <Ingredient {...ingredient} key={ingredient.id} />
       ))}
     </div>
   );
 };
 
-export default AuthorList;
+export default IngredientList;
 export { GET_INGREDIENTS };

@@ -1,0 +1,24 @@
+.dish-image--container {
+  height: 450px;
+  width: 450px;
+  margin-right: 24px;
+}
+
+.dish-image--video-container {
+  height: 450px;
+  width: 450px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 780px) {
+  .dish-image--container {
+    height: 360px;
+    width: 360px;
+  }
+
+  .dish-image--video-container {
+    height: 360px;
+    width: 360px;
+  }
+}
