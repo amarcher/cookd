@@ -9,7 +9,7 @@
     "@hot-loader/react-dom": "^16.11.0",
     "apollo-boost": "^0.4.7",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.20.12",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-create-client-paths": "^2.2.1",
     "gatsby-plugin-manifest": "^2.3.3",
